@@ -12,15 +12,18 @@ x_initial = [2, 1, 2]
 
 # Perform optimization using Nelder-Mead (Simplex) method
 step_size = 0.1
-epsilon = 1e-5
+epsilon = 0.01
 initial_simplex = np.array([x_initial])
+iter_counter = 1
+
 for i in range(len(x_initial)):
     point = x_initial.copy()
     point[i] += step_size
     initial_simplex = np.append(initial_simplex, [point], axis=0)
     print(initial_simplex)
+    iter_counter = 1 + iter_counter
 
 result = minimize(f, x_initial, method='Nelder-Mead', options={'xatol': epsilon, 'initial_simplex': initial_simplex})
-
 # Plot the convergence of the objective function
 print(result)
+print(iter_counter)
