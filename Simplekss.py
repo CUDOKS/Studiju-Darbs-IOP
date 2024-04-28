@@ -8,7 +8,7 @@ def f(x):
     return 2*x1**4 - x1*x2**2 + 2*x2**2*x3**2 - 2*x3**3 + 10*x1 - 2*x2 + np.exp(x3) - np.log(x1**2 + x2**2 + 1)
 
 # Initial guess for the parameters
-x_initial = [2, 1, 2]
+x_initial = [1.0, 2.0, 1.0]
 
 # Perform optimization using Nelder-Mead (Simplex) method
 step_size = 0.1
