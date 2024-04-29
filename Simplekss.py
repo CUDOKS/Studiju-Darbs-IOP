@@ -8,10 +8,10 @@ def f(x):
     return 2*x1**4 - x1*x2**2 + 2*x2**2*x3**2 - 2*x3**3 + 10*x1 - 2*x2 + np.exp(x3) - np.log(x1**2 + x2**2 + 1)
 
 # Initial guess for the parameters
-x_initial = [1.0, 2.0, 1.0]
+x_initial = [0.0, 0.0, 0.0] # sakum punkts
 
 # Perform optimization using Nelder-Mead (Simplex) method
-step_size = 0.1
+step_size = 0.1 # t - value
 epsilon = 0.01
 initial_simplex = np.array([x_initial])
 iter_counter = 1

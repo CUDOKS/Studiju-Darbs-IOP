@@ -7,7 +7,7 @@ def f(x):
     return 2*x1**4 - x1*x2**2 + 2*x2**2*x3**2 - 2*x3**3 + 10*x1 - 2*x2 + np.exp(x3) - np.log(x1**2 + x2**2 + 1)
 
 # Define the initial guess
-x0 = [0.0, 0.0, 0.0]
+x0 = [0.5, 0.5, 0.5]
 
 # Minimize the function
 result = minimize(f, x0)

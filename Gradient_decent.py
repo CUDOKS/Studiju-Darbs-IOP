@@ -29,8 +29,8 @@ def gradient_descent(grad, initial_guess, learning_rate, epsilon, max_iterations
 
     return np.array(x_values)
 
-initial_guess = [0.0, 0.0, 0.0]
-learning_rate = 0.001
+initial_guess = [0.5, 0.5, 0.5] # sakum punkts
+learning_rate = 0.001 # t value
 epsilon = 1
 max_iterations = 1000
 
