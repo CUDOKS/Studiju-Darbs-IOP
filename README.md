@@ -15,4 +15,4 @@ pip install scipy
 
 Atsevišķos gadijumos
 
-py -m pip install <dependecy> vai pyton -m pip install <dependency>
+py -m pip install <dependecy> vai python/python3 -m pip install <dependency>
